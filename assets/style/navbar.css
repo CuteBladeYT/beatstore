@@ -1,0 +1,82 @@
+div#navbar > div.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--navbar-height);
+}
+
+div#navbar > div.expanded {
+    position: absolute;
+    top: var(--navbar-height);
+    left: 0;
+    width: 100%;
+    height: calc(var(--navbar-height-hover) - var(--navbar-height));
+}
+
+div#navbar > div.main > img.site_icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--navbar-height);
+    height: var(--navbar-height);
+}
+
+div#navbar > div.main > span.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: xx-large;
+}
+
+
+div#navbar > div.expanded > div.contact,
+div#navbar > div.expanded > div.socials {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+div#navbar > div.expanded > div.socials {
+    left: 50%;
+}
+div#navbar > div.expanded > div > span.header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 32px;
+    transform: translateX(-50%);
+}
+div#navbar > div.expanded > div > ul {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    max-width: 100%;
+    height: calc(100% - 32px);
+    transform: translateX(-50%);
+
+    list-style-type: none;
+}
+div#navbar > div.expanded > div.contact > ul {width: calc(64px * 3);}
+div#navbar > div.expanded > div.socials > ul {width: calc(64px * 4);}
+div#navbar > div.expanded > div > ul > li {
+    float: left;
+}
+div#navbar > div.expanded > div > ul > li > a {
+    /* position: relative; */
+    width: 64px;
+    height: 64px;
+    display: block;
+}
+div#navbar > div.expanded > div > ul > li > a > img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 4px;
+    left: 4px;
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
+    object-fit: contain;
+}
